@@ -39,28 +39,7 @@ This is a boilerplate project that creates a simple "Hello World" component usin
 - `npm run build`: Cleans and builds the project
 - `npm run build:watch`: Builds the project and watches for changes
 - `npm run start`: Starts the Web Dev Server
-- `npm run dev`: Runs the build in watch mode and starts the Web Dev Server concurrently
-
-## Project Structure
-
-|-- .gitignore
-|-- package-lock.json
-|-- package.json
-|-- postcss.config.mjs
-|-- rollup.config.mjs
-|-- src
-    |-- components
-        |-- hello-world
-            |-- hello-world.ts
-            |-- html
-                |-- hello-world.html
-    |-- index.ts
-    |-- styles
-        |-- component-styles.scss
-    |-- typings
-        |-- global.d.ts
-|-- tsconfig.json
-|-- web-dev-server.config.mjs
+- `npm run serve`: Runs the build in watch mode and starts the Web Dev Server concurrently
 
 ## Development
 
