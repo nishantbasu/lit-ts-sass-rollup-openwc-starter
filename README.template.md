@@ -76,10 +76,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the ISC License.
 
 ## Web Component Documentation
-# hello-world
-
-## Properties
-
-| Property          | Attribute         | Type     | Default         |
-|-------------------|-------------------|----------|-----------------|
-| `stringToDisplay` | `stringToDisplay` | `string` | "Hello, World!" |
