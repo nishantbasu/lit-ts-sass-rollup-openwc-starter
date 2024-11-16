@@ -1,0 +1,46 @@
+{
+  "name": "lit-ts-sass-rollup-openwc-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/lit-ts-sass-rollup-openwc-starter.js",
+  "types": "dist/lit-ts-sass-rollup-openwc-starter.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c",
+    "build:watch": "npm run clean && rollup -c --watch",
+    "start": "web-dev-server --node-resolve --open --watch",
+    "serve": "concurrently \"npm run build:watch\" \"npm run start\""
+  },
+  "keywords": [],
+  "author": "Nishant Basu",
+  "license": "ISC",
+  "description": "Lit Element Typescrip Starter Project with sass and openwc using rollup",
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "5.0.0",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "0.4.4",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-esbuild": "^1.0.3",
+    "@web/dev-server-rollup": "^0.6.4",
+    "concurrently": "^8.2.2",
+    "rimraf": "5.0.5",
+    "rollup": "^2.11.2",
+    "rollup-plugin-filesize": "10.0.0",
+    "rollup-plugin-import-lithtml": "1.0.3",
+    "rollup-plugin-minify-html-literals": "1.2.6",
+    "rollup-plugin-postcss": "4.0.2",
+    "rollup-plugin-typescript2": "0.36.0",
+    "sass": "1.71.0",
+    "tslib": "2.6.2",
+    "typescript": "5.2.2"
+  }
+}
