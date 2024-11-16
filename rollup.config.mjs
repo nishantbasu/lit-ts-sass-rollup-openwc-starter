@@ -8,7 +8,6 @@ import * as path from 'path';
 import purgecss from '@fullhuman/postcss-purgecss';
 import importLitHtml from 'rollup-plugin-import-lithtml';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
-import copy from 'rollup-plugin-copy';
 
 export default {
 	input: './src/index.ts',
@@ -46,11 +45,6 @@ export default {
 		}),
 		fileSize(),
 		typescript({tsconfig: './tsconfig.json'}),
-		terser(),
-		copy({
-			targets: [
-			  { src: 'src/typings/*.d.ts', dest: 'dist/types' },
-			],
-		}),
+		terser()
 	]
 };

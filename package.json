@@ -2,13 +2,6 @@
   "name": "lit-ts-sass-rollup-openwc-starter",
   "version": "1.0.0",
   "type": "module",
-  "main": "dist/lit-ts-sass-rollup-openwc-starter.js",
-  "types": "dist/lit-ts-sass-rollup-openwc-starter.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "package.json"
-  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c",
@@ -38,7 +31,6 @@
     "concurrently": "^8.2.2",
     "rimraf": "5.0.5",
     "rollup": "^2.11.2",
-    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-filesize": "10.0.0",
     "rollup-plugin-import-lithtml": "1.0.3",
     "rollup-plugin-lit-css": "^5.0.1",
