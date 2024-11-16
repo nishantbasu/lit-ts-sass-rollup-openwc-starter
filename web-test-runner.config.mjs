@@ -1,6 +1,5 @@
 import { esbuildPlugin } from '@web/dev-server-esbuild';
 import sassRewritePath  from './web-dev-server/middlewares/sassRewritePath.mjs';
-import importMapRewritePath  from './web-dev-server/middlewares/importMapRewritePath.mjs';
 import customHTMLPlugin from './web-dev-server/plugins/custom-html-plugin.mjs';
 import customCssPlugin from './web-dev-server/plugins/custom-css-plugin.mjs';
 
