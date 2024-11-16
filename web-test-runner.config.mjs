@@ -1,17 +1,16 @@
 import { esbuildPlugin } from '@web/dev-server-esbuild';
 import sassRewritePath  from './web-dev-server/middlewares/sassRewritePath.mjs';
+import importMapRewritePath  from './web-dev-server/middlewares/importMapRewritePath.mjs';
 import customHTMLPlugin from './web-dev-server/plugins/custom-html-plugin.mjs';
 import customCssPlugin from './web-dev-server/plugins/custom-css-plugin.mjs';
 
 export default {
-  open: true,
-  watch: true,
+  files: 'src/**/*.spec.ts',
   nodeResolve: true,
-  appIndex: 'demo/index.html',
   plugins: [
     customHTMLPlugin,
     customCssPlugin,
-    esbuildPlugin({ ts: true, tsconfig:'./tsconfig.json' })
+    esbuildPlugin({ ts: true, tsconfig:'./tsconfig.json', target: 'auto' })
   ],
   middleware: [sassRewritePath],
 };
