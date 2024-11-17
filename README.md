@@ -1,4 +1,4 @@
-# 🚀 LitElement TypeScript SASS Rollup OpenWC Starter Kit
+# 🚀 LitElement TypeScript SASS Rollup Starter Kit
 
 <p align="center">
   <strong>A comprehensive starter kit for building scalable and maintainable micro-frontends with modern web component ecosystem.</strong>
