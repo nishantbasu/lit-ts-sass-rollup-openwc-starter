@@ -31,18 +31,19 @@
 
 1. Clone the repository:
    git clone https://github.com/your-username/lit-ts-sass-rollup-openwc-starter.git
-   cd lit-ts-sass-rollup-openwc-starter
 
-2. Install dependencies:
+2. cd lit-ts-sass-rollup-openwc-starter
+
+3. Install dependencies:
    npm install
 
-3. Build the project:
+4. Build the project:
    npm run build
 
-4. Start the development server:
+5. Start the development server:
    npm run serve
 
-5. Open your browser and navigate to `http://localhost:8000/demo` to see the Hello World component's demo.
+6. Open your browser and navigate to `http://localhost:8000/demo` to see the Hello World component's demo.
 
 ## 📜 Available Scripts
 
