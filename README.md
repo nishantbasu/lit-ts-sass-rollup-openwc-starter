@@ -1,22 +1,33 @@
-# Lit Element TypeScript Sass Rollup OpenWC Starter
+# 🚀 LitElement TypeScript SASS Rollup OpenWC Starter Kit
 
-This is a boilerplate project that creates a simple "Hello World" component using Lit Element, TypeScript, and Sass. It uses Rollup as the bundler and Web Dev Server for development. OpenWC is integrated for testing.
+<p align="center">
+  <strong>A comprehensive starter kit for building scalable and maintainable micro-frontends with modern web component ecosystem.</strong>
+</p>
 
-## Features
+<p align="center">
+  🔥 LitElement | 🌐 TypeScript | 🎨 SASS | 📦 Rollup | 🧪 OpenWC
+</p>
 
-- Lit Element for creating web components
-- TypeScript for type-safe JavaScript
-- Sass for enhanced CSS functionality
-- Rollup for efficient bundling
-- Web Dev Server for local development
-- OpenWC for testing web components
+## 🌟 Key Features
 
-## Prerequisites
+- **⚡ LitElement**: Lightweight and fast web components.
+- **🔷 TypeScript**: Enhanced developer experience with static typing.
+- **🎨 SASS**: Write styles using SASS syntax, processed through PostCSS.
+- **🖌️ PostCSS**: Automatic vendor prefixing and CSS optimization.
+- **📦 Rollup**: Efficient bundling for optimized production builds.
+- **🔧 Web Dev Server**: Modern development servers with hot reloading.
+- **🔍 OpenWC && Web Test Runner**: Modern, fast testing for web components.
+- **📚 Automatic Docs**: Generate component documentation effortlessly.
+- **✨ Linting & Formatting**: Ensure code quality with ESLint and Prettier.
+- **🖥️ Built-in Demo**: Showcase your micro-frontend components.
+- **🔧 Modern JavaScript**: Utilizes `.mjs` files for ES6 modules.
 
-- Node.js (version 14 or later)
-- npm (usually comes with Node.js)
+## 📋 Prerequisites
 
-## Getting Started
+- Node.js 
+- npm
+
+## 🚀 Getting Started
 
 1. Clone the repository:
    git clone https://github.com/your-username/lit-ts-sass-rollup-openwc-starter.git
@@ -29,53 +40,88 @@ This is a boilerplate project that creates a simple "Hello World" component usin
    npm run build
 
 4. Start the development server:
-   npm run start
+   npm run serve
 
-5. Open your browser and navigate to `http://localhost:8000` to see the Hello World component.
+5. Open your browser and navigate to `http://localhost:8000/demo` to see the Hello World component's demo.
 
-## Scripts
+## 📜 Available Scripts
 
-- `npm run clean`: Removes the `dist` directory
-- `npm run build`: Cleans and builds the project
-- `npm run build:watch`: Builds the project and watches for changes
-- `npm run start`: Starts the Web Dev Server
-- `npm run serve`: Runs the build in watch mode and starts the Web Dev Server concurrently
+This project comes with several predefined scripts in the `package.json` file:
 
-## Development
+- **`npm run lint`**: 
+  Runs ESLint to check for code quality and style issues across the project.
 
-1. The main component is located in `src/components/hello-world/hello-world.ts`.
-2. Styles are written in Sass and located in `src/styles/component-styles.scss`.
-3. The entry point for the application is `src/index.ts`.
+- **`npm run format`**: 
+  Uses Prettier to automatically format JavaScript, TypeScript, CSS, and HTML files in the `src` directory.
 
-To start development:
+- **`npm run clean`**: 
+  Removes the `dist` directory to ensure a clean slate before builds.
 
-1. Run `npm run dev`
-2. Edit the files in the `src` directory
-3. The browser will automatically reload with your changes
+- **`npm run build`**: 
+  Cleans the `dist` directory, runs Rollup to build the project, and generates documentation.
 
-## Building for Production
+- **`npm run build:watch`**: 
+  Similar to `build`, but watches for file changes and rebuilds automatically.
 
-To create a production build:
+- **`npm run sass:build`**: 
+  Compiles the main SASS file (`styles-for-demo-app.scss`) to CSS, used for the demo application. Main sass build is taken care by rollup.
 
-npm run build
+- **`npm start`**: 
+  Builds SASS files and starts the Web Dev Server for development.
 
-This will generate optimized files in the `dist` directory.
+- **`npm run serve`**: 
+  Runs `build:watch` and `start` concurrently, providing a full development environment with live rebuilding.
 
-## Testing
+- **`npm run test`**: 
+  Runs tests using Web Test Runner.
 
-This project uses OpenWC for testing. To run tests:
+- **`npm run docs`**: 
+  Generates component documentation using Web Component Analyzer and updates the README file.
 
-npm test
+## 💻 Development Workflow
 
-## Contributing
+For active development, use:
+
+**`npm run serve`**: 
+
+
+### 🏗️ Project Structure and Conventions
+
+1. Each component has its own directory within `src/components/`
+2. Test files (`.spec.ts`) are located alongside their respective components
+3. HTML templates (`.html`) are separate files inside `src/components/html` folder, promoting a clear separation of logic and view
+4. Styles are written in Sass and located in `src/styles/component-styles.scss`
+5. The entry point for the application is `src/index.ts`
+
+ 
+### ⚙️ Configuration Files
+
+This project uses several configuration files to manage its build process, development server, and code quality tools:
+
+1. **`rollup.config.mjs`**: Configures the Rollup bundler for efficient production builds.
+2. **`eslint.config.mjs`**: Sets up ESLint rules for maintaining code quality. Use the **`ignores`** attribute to specify the files to be ignored by lint.
+3. **`.prettierrc`**: Defines code formatting rules for Prettier.
+4. **`web-dev-server.config.mjs`**: Configures the development server.
+5. **`web-test-runner.config.mjs`**: Sets up the testing server.
+6. **`postcss.config.mjs`**: Currently empty, but available for future PostCSS configurations.
+
+#### Custom Plugins and Middleware
+
+In the `web-dev-server` folder, you'll find:
+
+- Two custom plugins that handle CSS and HTML file imports.
+- A middleware for for sass path handling for web test runner.
+
+These custom configurations enable seamless development and testing with hot reloading for both styles and templates.
+
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the ISC License.
-
 ## Web Component Documentation
+
+
+
 # hello-world
 
 ## Properties
