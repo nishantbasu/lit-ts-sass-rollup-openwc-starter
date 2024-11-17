@@ -30,7 +30,7 @@
 ## 🚀 Getting Started
 
 1. Clone the repository:
-   git clone https://github.com/your-username/lit-ts-sass-rollup-openwc-starter.git
+   git clone https://github.com/nishantbasu/lit-ts-sass-rollup-openwc-starter.git
 
 2. cd lit-ts-sass-rollup-openwc-starter
 
